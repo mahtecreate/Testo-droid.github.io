@@ -143,5 +143,18 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 </h3>
+  <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 57.132639, lng: 23.474591 },
+		  mapTypeId: 'hybrid',
+          zoom: 11,
+		  mapId: '138279c12c63d0d5'
+        });
+		map.setTilt(45);
+      }
+    </script>
 </body>
 </html>
